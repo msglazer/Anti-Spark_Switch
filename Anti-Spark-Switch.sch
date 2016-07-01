@@ -1,0 +1,263 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sparkparts
+LIBS:Anti-Spark-Switch-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R?
+U 1 1 5775E315
+P 3100 3800
+F 0 "R?" V 3180 3800 50  0000 C CNN
+F 1 "1M" V 3100 3800 50  0000 C CNN
+F 2 "" V 3030 3800 50  0000 C CNN
+F 3 "" H 3100 3800 50  0000 C CNN
+	1    3100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5775E3D7
+P 3100 3200
+F 0 "R?" V 3180 3200 50  0000 C CNN
+F 1 "1M" V 3100 3200 50  0000 C CNN
+F 2 "" V 3030 3200 50  0000 C CNN
+F 3 "" H 3100 3200 50  0000 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5775E416
+P 3800 3100
+F 0 "R?" V 3880 3100 50  0000 C CNN
+F 1 "1K" V 3800 3100 50  0000 C CNN
+F 2 "" V 3730 3100 50  0000 C CNN
+F 3 "" H 3800 3100 50  0000 C CNN
+	1    3800 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5775E442
+P 3500 3300
+F 0 "C?" H 3525 3400 50  0000 L CNN
+F 1 "1uF" H 3525 3200 50  0000 L CNN
+F 2 "" H 3538 3150 50  0000 C CNN
+F 3 "" H 3500 3300 50  0000 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D?
+U 1 1 5775E48B
+P 3500 3900
+F 0 "D?" H 3500 4000 50  0000 C CNN
+F 1 "ZENER" H 3500 3800 50  0000 C CNN
+F 2 "" H 3500 3900 50  0000 C CNN
+F 3 "" H 3500 3900 50  0000 C CNN
+	1    3500 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5775E514
+P 2450 4350
+F 0 "#PWR?" H 2450 4100 50  0001 C CNN
+F 1 "GND" H 2450 4200 50  0000 C CNN
+F 2 "" H 2450 4350 50  0000 C CNN
+F 3 "" H 2450 4350 50  0000 C CNN
+	1    2450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 5775E532
+P 2450 2650
+F 0 "#PWR?" H 2450 2500 50  0001 C CNN
+F 1 "VCC" H 2450 2800 50  0000 C CNN
+F 2 "" H 2450 2650 50  0000 C CNN
+F 3 "" H 2450 2650 50  0000 C CNN
+	1    2450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5775E6E6
+P 2700 3850
+F 0 "SW?" H 2850 3960 50  0000 C CNN
+F 1 "SW_PUSH" H 2700 3770 50  0000 C CNN
+F 2 "" H 2700 3850 50  0000 C CNN
+F 3 "" H 2700 3850 50  0000 C CNN
+	1    2700 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L IRFS7530 Q?
+U 1 1 5775E96F
+P 4350 3450
+F 0 "Q?" H 4550 3525 50  0000 L CNN
+F 1 "IRFS7530" H 4550 3450 50  0000 L CNN
+F 2 "sparkparts:D2PAK-7-GDS" H 4550 3375 50  0001 L CIN
+F 3 "" H 4350 3450 50  0000 L CNN
+	1    4350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRFS7530 Q?
+U 1 1 5775E99F
+P 5050 3450
+F 0 "Q?" H 5250 3525 50  0000 L CNN
+F 1 "IRFS7530" H 5250 3450 50  0000 L CNN
+F 2 "sparkparts:D2PAK-7-GDS" H 5250 3375 50  0001 L CIN
+F 3 "" H 5050 3450 50  0000 L CNN
+	1    5050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRFS7530 Q?
+U 1 1 5775E9D5
+P 5750 3450
+F 0 "Q?" H 5950 3525 50  0000 L CNN
+F 1 "IRFS7530" H 5950 3450 50  0000 L CNN
+F 2 "sparkparts:D2PAK-7-GDS" H 5950 3375 50  0001 L CIN
+F 3 "" H 5750 3450 50  0000 L CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2650 2450 2800
+Wire Wire Line
+	2450 2800 3100 2800
+Wire Wire Line
+	3100 2800 6100 2800
+Wire Wire Line
+	2700 3500 3100 3500
+Wire Wire Line
+	3100 3500 3500 3500
+Wire Wire Line
+	3500 3500 4050 3500
+Wire Wire Line
+	4050 3500 4150 3500
+Wire Wire Line
+	3100 3350 3100 3500
+Wire Wire Line
+	3100 3500 3100 3650
+Connection ~ 3100 3500
+Wire Wire Line
+	3100 3050 3100 2800
+Connection ~ 3100 2800
+Wire Wire Line
+	2450 4350 2450 4200
+Wire Wire Line
+	2450 4200 2700 4200
+Wire Wire Line
+	2700 4200 3100 4200
+Wire Wire Line
+	3100 4200 3500 4200
+Wire Wire Line
+	3500 4200 4450 4200
+Wire Wire Line
+	4450 4200 5150 4200
+Wire Wire Line
+	5150 4200 5850 4200
+Wire Wire Line
+	3100 3950 3100 4200
+Connection ~ 3100 4200
+Wire Wire Line
+	2700 4150 2700 4200
+Connection ~ 2700 4200
+Wire Wire Line
+	2700 3550 2700 3500
+Wire Wire Line
+	3650 3100 3500 3100
+Wire Wire Line
+	3500 3100 3500 3150
+Wire Wire Line
+	3500 3450 3500 3500
+Wire Wire Line
+	3500 3500 3500 3700
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 4100 3500 4200
+Connection ~ 3500 4200
+Wire Wire Line
+	4050 3500 4050 3750
+Wire Wire Line
+	4050 3750 4850 3750
+Wire Wire Line
+	4850 3750 5550 3750
+Wire Wire Line
+	5550 3750 5550 3500
+Wire Wire Line
+	4850 3500 4850 3750
+Connection ~ 4850 3750
+Wire Wire Line
+	4450 3100 4450 3100
+Wire Wire Line
+	4450 3100 4450 3250
+Wire Wire Line
+	4450 3100 5150 3100
+Wire Wire Line
+	5150 3100 5850 3100
+Wire Wire Line
+	5850 3100 6100 3100
+Wire Wire Line
+	5850 3250 5850 3100
+Connection ~ 5850 3100
+Wire Wire Line
+	5150 3250 5150 3100
+Connection ~ 5150 3100
+Wire Wire Line
+	4450 3650 4450 4200
+Connection ~ 4450 4200
+Wire Wire Line
+	5150 3650 5150 4200
+Connection ~ 5150 4200
+Wire Wire Line
+	5850 4200 5850 3650
+Connection ~ 4050 3500
+Wire Wire Line
+	3950 3100 4450 3100
+Connection ~ 4450 3100
+$EndSCHEMATC

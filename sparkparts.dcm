@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRFS7530
+D 60V Vds, 240A Id, 1.4mOhm Rds, N-Channel MOSFET, TO-236-7
+K  N-Channel Power MOSFET
+F http://www.mouser.com/ds/2/196/irfs7530-7ppbf-937822.pdf
+$ENDCMP
+#
+#End Doc Library
