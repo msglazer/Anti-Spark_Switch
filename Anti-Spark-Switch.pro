@@ -1,4 +1,4 @@
-update=6/30/2016 11:52:07 PM
+update=7/7/2016 6:14:53 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -57,5 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=libraries/sparkparts
-[general]
-version=1
+LibName31=libraries/crf_1

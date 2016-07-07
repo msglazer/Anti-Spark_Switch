@@ -1,6 +1,6 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP Screw_Terminal
+$CMP Pad_Conn
 D Connector 01x01
 $ENDCMP
 #
