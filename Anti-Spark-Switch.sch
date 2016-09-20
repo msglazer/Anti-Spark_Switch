@@ -143,9 +143,6 @@ Wire Wire Line
 	4650 3600 4650 3900
 Connection ~ 4650 3750
 Wire Wire Line
-	4650 3300 4650 3050
-Connection ~ 4650 3050
-Wire Wire Line
 	4100 4600 4100 4450
 Wire Wire Line
 	3900 4450 7700 4450
@@ -283,7 +280,7 @@ U 1 1 577ED99B
 P 7850 3350
 F 0 "P6" H 7850 3450 50  0000 C CNN
 F 1 "Pad_Conn" H 7950 3250 50  0000 C CNN
-F 2 "sparkparts:1PAD_6x5mm" V 7850 3350 50  0001 C CNN
+F 2 "sparkparts:1PAD_8x7mm" V 7850 3350 50  0001 C CNN
 F 3 "" H 7850 3350 50  0000 C CNN
 	1    7850 3350
 	1    0    0    -1  
@@ -332,4 +329,11 @@ F 3 "" H 7300 3700 50  0000 L CNN
 	1    7300 3700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7400 3050 7400 3250
+Wire Wire Line
+	7400 3250 4650 3250
+Wire Wire Line
+	4650 3250 4650 3300
+Connection ~ 7400 3050
 $EndSCHEMATC
