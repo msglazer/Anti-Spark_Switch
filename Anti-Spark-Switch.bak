@@ -247,9 +247,9 @@ Wire Wire Line
 Text Notes 5150 2850 0    60   ~ 0
 Fuse holder, 30mm spacing between screw terminals\n
 Text Notes 7100 4800 0    60   ~ 0
-12V supply for optional LED button
+12V (5V) supply for optional LED button
 Text Notes 7400 4900 0    60   ~ 0
-12V supplied externally
+12V (5V) supplied externally
 Connection ~ 4100 3050
 Connection ~ 4100 4450
 $Comp
