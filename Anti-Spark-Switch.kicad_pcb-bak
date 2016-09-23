@@ -14,7 +14,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -481,7 +481,7 @@
   (module Spark_Parts:1PAD_8x7mm (layer F.Cu) (tedit 57E47E77) (tstamp 577EEAF6)
     (at 238.61 85.65)
     (path /577ED99B)
-    (fp_text reference P6 (at 0.01 -5.49 270) (layer F.SilkS)
+    (fp_text reference P6 (at -5.37 0 270) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
     (fp_text value Pad_Conn (at 0.01 5.06) (layer F.SilkS) hide
@@ -498,10 +498,10 @@
   (module Spark_Parts:1PAD_8x7mm (layer F.Cu) (tedit 57E47E36) (tstamp 577EEAED)
     (at 238.51 53.49)
     (path /577ED9DE)
-    (fp_text reference P5 (at 0.01 -5.49 270) (layer F.SilkS)
+    (fp_text reference P5 (at -5.25 -0.01 270) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value Pad_Conn (at 0.01 5.06) (layer F.SilkS) hide
+    (fp_text value Pad_Conn (at -0.76 6.7) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -4.3 -3.8) (end 4.3 -3.8) (layer F.SilkS) (width 0.15))
@@ -515,7 +515,7 @@
   (module Spark_Parts:1PAD_8x7mm (layer F.Cu) (tedit 57DC5F4B) (tstamp 577EEABA)
     (at 185 85.725)
     (path /577ED942)
-    (fp_text reference P2 (at 0.01 -5.49 270) (layer F.SilkS)
+    (fp_text reference P2 (at 5.8 -0.005 270) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
     (fp_text value Pad_Conn (at 0.01 5.06) (layer F.SilkS) hide
@@ -532,10 +532,10 @@
   (module Spark_Parts:1PAD_8x7mm (layer F.Cu) (tedit 57E47E3F) (tstamp 577EEAB1)
     (at 185.52 53.51)
     (path /577ED8F0)
-    (fp_text reference P1 (at 0.01 -5.49 270) (layer F.SilkS)
+    (fp_text reference P1 (at 5.45 0 270) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value Pad_Conn (at 0.01 5.06) (layer F.SilkS) hide
+    (fp_text value Pad_Conn (at 0.26 -4.4) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -4.3 -3.8) (end 4.3 -3.8) (layer F.SilkS) (width 0.15))
@@ -582,16 +582,16 @@
   (gr_text "12V SW GND" (at 187.1218 65.1256 270) (layer F.SilkS)
     (effects (font (size 0.75 0.75) (thickness 0.1875)))
   )
-  (gr_text "OUT -" (at 239.1664 81.3308) (layer F.SilkS)
+  (gr_text "OUT -" (at 238.45 80.75) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "OUT +" (at 238.633 58.0644) (layer F.SilkS)
+  (gr_text "OUT +" (at 238.71 58.49) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "IN +" (at 185.1152 58.1152) (layer F.SilkS)
+  (gr_text "IN +" (at 185.48 58.44) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "IN -" (at 184.5056 81.6102) (layer F.SilkS)
+  (gr_text "IN -" (at 185.07 80.77) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 243.25 48) (end 180 48) (angle 90) (layer Edge.Cuts) (width 0.15))
