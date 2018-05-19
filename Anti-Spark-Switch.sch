@@ -95,7 +95,7 @@ U 1 1 5775E48B
 P 5050 4150
 F 0 "D1" H 5050 4250 50  0000 C CNN
 F 1 "ZENER" H 5050 4050 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 5050 4150 50  0001 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 5050 4150 50  0001 C CNN
 F 3 "" H 5050 4150 50  0000 C CNN
 	1    5050 4150
 	0    1    1    0   
@@ -123,87 +123,16 @@ F 3 "" H 4100 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
-U 1 1 5775E6E6
-P 4250 4100
-F 0 "SW1" H 4400 4210 50  0000 C CNN
-F 1 "SW_PUSH" H 4250 4020 50  0000 C CNN
-F 2 "Connect:PINHEAD1-3" H 4250 4100 50  0001 C CNN
-F 3 "" H 4250 4100 50  0000 C CNN
-	1    4250 4100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4100 2900 4100 3050
-Wire Wire Line
-	3900 3050 6000 3050
-Wire Wire Line
-	4250 3750 5700 3750
-Wire Wire Line
-	4650 3600 4650 3900
-Connection ~ 4650 3750
-Wire Wire Line
-	4100 4600 4100 4450
-Wire Wire Line
-	4650 4450 4650 4200
-Connection ~ 4650 4450
-Wire Wire Line
-	4250 4450 4250 4400
-Connection ~ 4250 4450
-Wire Wire Line
-	4250 3800 4250 3750
-Wire Wire Line
-	5200 3350 5050 3350
-Wire Wire Line
-	5050 3350 5050 3400
-Wire Wire Line
-	5050 3700 5050 3950
-Connection ~ 5050 3750
-Wire Wire Line
-	5050 4450 5050 4350
-Connection ~ 5050 4450
-Wire Wire Line
-	5600 3750 5600 4000
-Wire Wire Line
-	5600 4000 7100 4000
-Wire Wire Line
-	7100 4000 7100 3750
-Wire Wire Line
-	6400 3750 6400 4000
-Connection ~ 6400 4000
-Wire Wire Line
-	5500 3350 8250 3350
-Wire Wire Line
-	6000 3350 6000 3500
-Wire Wire Line
-	7400 3500 7400 3350
-Connection ~ 7400 3350
-Wire Wire Line
-	6700 3500 6700 3350
-Connection ~ 6700 3350
-Wire Wire Line
-	6000 4450 6000 3900
-Connection ~ 6000 4450
-Wire Wire Line
-	6700 4450 6700 3900
-Connection ~ 6700 4450
-Wire Wire Line
-	7400 4450 7400 3900
-Connection ~ 5600 3750
-Connection ~ 6000 3350
-$Comp
-L CONN_01X02 P7
+L Conn_01x04 P7
 U 1 1 577ECAA0
-P 8400 4400
-F 0 "P7" H 8400 4550 50  0000 C CNN
-F 1 "CONN_01X02" V 8500 4400 50  0000 C CNN
-F 2 "Connect:PINHEAD1-2" H 8400 4400 50  0001 C CNN
-F 3 "" H 8400 4400 50  0000 C CNN
-	1    8400 4400
+P 8400 4450
+F 0 "P7" H 8400 4600 50  0000 C CNN
+F 1 "CONN_01X04" V 8500 4450 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 8400 4450 50  0001 C CNN
+F 3 "" H 8400 4450 50  0000 C CNN
+	1    8400 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 4350 8200 4350
 $Comp
 L Screw_Terminal P3
 U 1 1 577ECE79
@@ -226,12 +155,8 @@ F 3 "" H 6600 3050 50  0000 C CNN
 	1    6600 3050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6800 3050 8250 3050
 Text Notes 5150 2850 0    60   ~ 0
 Fuse holder, 30mm spacing between screw terminals\n
-Connection ~ 4100 3050
-Connection ~ 4100 4450
 $Comp
 L Pad_Conn P1
 U 1 1 577ED8F0
@@ -302,13 +227,103 @@ $Comp
 L IRFS7530 Q3
 U 1 1 577F00F2
 P 7300 3700
-F 0 "Q3" H 7550 3850 50  0000 L CNN
-F 1 "IRFS7530" V 7600 3450 50  0000 L CNN
+F 0 "Q3" H 7500 3850 50  0000 L CNN
+F 1 "IRFS7530" V 7525 3450 50  0000 L CNN
 F 2 "sparkparts:D2PAK-7-GDS" H 7500 3625 50  0001 L CIN
 F 3 "" H 7300 3700 50  0000 L CNN
 	1    7300 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R4
+U 1 1 5AD7FABD
+P 7725 3650
+F 0 "R4" H 7795 3696 50  0000 L CNN
+F 1 "16.5K" V 7725 3550 43  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 7655 3650 50  0001 C CNN
+F 3 "" H 7725 3650 50  0001 C CNN
+	1    7725 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5AD7FB17
+P 7975 3650
+F 0 "R5" H 8045 3696 50  0000 L CNN
+F 1 "16.5K" V 7975 3550 43  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 7905 3650 50  0001 C CNN
+F 3 "" H 7975 3650 50  0001 C CNN
+	1    7975 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 7825 4400 1    60   ~ 0
+LED output
+Text HLabel 4200 4200 0    60   Input ~ 0
+SW_GND
+Text HLabel 4200 4075 0    60   Input ~ 0
+SW_NC
+Wire Wire Line
+	4100 2900 4100 3050
+Wire Wire Line
+	3900 3050 6000 3050
+Wire Wire Line
+	4250 3750 5700 3750
+Wire Wire Line
+	4650 3600 4650 3900
+Connection ~ 4650 3750
+Wire Wire Line
+	4100 4600 4100 4450
+Wire Wire Line
+	4650 4450 4650 4200
+Connection ~ 4650 4450
+Wire Wire Line
+	4250 4450 4250 4200
+Connection ~ 4250 4450
+Wire Wire Line
+	4250 3750 4250 4075
+Wire Wire Line
+	5200 3350 5050 3350
+Wire Wire Line
+	5050 3350 5050 3400
+Wire Wire Line
+	5050 3700 5050 3950
+Connection ~ 5050 3750
+Wire Wire Line
+	5050 4450 5050 4350
+Connection ~ 5050 4450
+Wire Wire Line
+	5600 3750 5600 4000
+Wire Wire Line
+	5600 4000 7100 4000
+Wire Wire Line
+	7100 4000 7100 3750
+Wire Wire Line
+	6400 3750 6400 4000
+Connection ~ 6400 4000
+Wire Wire Line
+	5500 3350 8250 3350
+Wire Wire Line
+	6000 3350 6000 3500
+Wire Wire Line
+	7400 3500 7400 3350
+Connection ~ 7400 3350
+Wire Wire Line
+	6700 3500 6700 3350
+Connection ~ 6700 3350
+Wire Wire Line
+	6000 4450 6000 3900
+Connection ~ 6000 4450
+Wire Wire Line
+	6700 4450 6700 3900
+Connection ~ 6700 4450
+Wire Wire Line
+	7400 3900 7400 4650
+Connection ~ 5600 3750
+Connection ~ 6000 3350
+Wire Wire Line
+	6800 3050 8250 3050
+Connection ~ 4100 3050
+Connection ~ 4100 4450
 Wire Wire Line
 	7400 3050 7400 3250
 Wire Wire Line
@@ -319,47 +334,36 @@ Connection ~ 7400 3050
 Wire Wire Line
 	3900 4450 7400 4450
 Wire Wire Line
-	7500 3350 7500 4450
+	7725 3050 7725 3500
 Wire Wire Line
-	7500 4450 8200 4450
-Connection ~ 7500 3350
-$Comp
-L R R4
-U 1 1 5AD7FABD
-P 7800 3650
-F 0 "R4" H 7870 3696 50  0000 L CNN
-F 1 "16.5K" V 7800 3550 43  0000 L CNN
-F 2 "Resistors_SMD:R_1206" V 7730 3650 50  0001 C CNN
-F 3 "" H 7800 3650 50  0001 C CNN
-	1    7800 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R5
-U 1 1 5AD7FB17
-P 8050 3650
-F 0 "R5" H 8120 3696 50  0000 L CNN
-F 1 "16.5K" V 8050 3550 43  0000 L CNN
-F 2 "Resistors_SMD:R_1206" V 7980 3650 50  0001 C CNN
-F 3 "" H 8050 3650 50  0001 C CNN
-	1    8050 3650
-	1    0    0    -1  
-$EndComp
+	7725 3450 7975 3450
 Wire Wire Line
-	7800 3050 7800 3500
+	7975 3450 7975 3500
 Wire Wire Line
-	7800 3450 8050 3450
+	7725 3800 7725 4450
 Wire Wire Line
-	8050 3450 8050 3500
+	7725 3850 7975 3850
 Wire Wire Line
-	7800 3800 7800 4350
+	7975 3850 7975 3800
+Connection ~ 7725 3050
+Connection ~ 7725 3450
+Connection ~ 7725 3850
 Wire Wire Line
-	7800 3850 8050 3850
+	4250 4200 4200 4200
 Wire Wire Line
-	8050 3850 8050 3800
-Connection ~ 7800 3050
-Connection ~ 7800 3450
-Connection ~ 7800 3850
-Text Notes 7950 4050 0    60   ~ 0
-LED output
+	4250 4075 4200 4075
+Wire Wire Line
+	7725 4450 8200 4450
+Wire Wire Line
+	8200 4350 8150 4350
+Wire Wire Line
+	8150 4350 8150 3350
+Connection ~ 8150 3350
+Text HLabel 8050 4550 0    60   Input ~ 0
+SW_NC
+Wire Wire Line
+	8050 4550 8200 4550
+Wire Wire Line
+	7400 4650 8200 4650
+Connection ~ 7400 4450
 $EndSCHEMATC
