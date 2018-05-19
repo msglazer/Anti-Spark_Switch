@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (trace_clearance 0.13)
     (zone_clearance 0.254)
@@ -477,14 +477,14 @@
     )
   )
 
-  (module Diodes_SMD:D_SOD-123F (layer F.Cu) (tedit 587F7769) (tstamp 5B0B4A91)
+  (module Diodes_SMD:D_SOD-123F (layer F.Cu) (tedit 5B0077A9) (tstamp 5B0B4A91)
     (at 125.44 102.215)
     (descr D_SOD-123F)
     (tags D_SOD-123F)
     (path /5775E48B)
     (attr smd)
-    (fp_text reference D1 (at -0.127 -1.905) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference D1 (at -1.58 1.775) (layer F.SilkS)
+      (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value ZENER (at 0 2.1) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
