@@ -114,60 +114,27 @@ $EndComp
 $Comp
 L VCC #PWR02
 U 1 1 5775E532
-P 4100 2900
-F 0 "#PWR02" H 4100 2750 50  0001 C CNN
-F 1 "VCC" H 4100 3050 50  0000 C CNN
-F 2 "" H 4100 2900 50  0000 C CNN
-F 3 "" H 4100 2900 50  0000 C CNN
-	1    4100 2900
+P 8150 2900
+F 0 "#PWR02" H 8150 2750 50  0001 C CNN
+F 1 "VCC" H 8150 3050 50  0000 C CNN
+F 2 "" H 8150 2900 50  0000 C CNN
+F 3 "" H 8150 2900 50  0000 C CNN
+	1    8150 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04 P7
 U 1 1 577ECAA0
 P 8400 4450
-F 0 "P7" H 8400 4600 50  0000 C CNN
+F 0 "P7" H 8400 4650 50  0000 C CNN
 F 1 "CONN_01X04" V 8500 4450 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 8400 4450 50  0001 C CNN
 F 3 "" H 8400 4450 50  0000 C CNN
 	1    8400 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Screw_Terminal P3
-U 1 1 577ECE79
-P 6200 3050
-F 0 "P3" H 6200 3150 50  0000 C CNN
-F 1 "Screw_Terminal" H 6000 2950 50  0000 C CNN
-F 2 "sparkparts:M5_Screw_Terminal_12_pin" H 6200 3050 50  0001 C CNN
-F 3 "" H 6200 3050 50  0000 C CNN
-	1    6200 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Screw_Terminal P4
-U 1 1 577ECEBD
-P 6600 3050
-F 0 "P4" H 6600 2950 50  0000 C CNN
-F 1 "Screw_Terminal" H 6400 3150 50  0000 C CNN
-F 2 "sparkparts:M5_Screw_Terminal_12_pin" H 6600 3050 50  0001 C CNN
-F 3 "" H 6600 3050 50  0000 C CNN
-	1    6600 3050
-	-1   0    0    1   
-$EndComp
 Text Notes 5150 2850 0    60   ~ 0
 Fuse holder, 30mm spacing between screw terminals\n
-$Comp
-L Pad_Conn P1
-U 1 1 577ED8F0
-P 3700 3050
-F 0 "P1" H 3700 3150 50  0000 C CNN
-F 1 "Pad_Conn" V 3800 3050 50  0000 C CNN
-F 2 "sparkparts:1PAD_8x7mm" H 3700 3050 50  0001 C CNN
-F 3 "" H 3700 3050 50  0000 C CNN
-	1    3700 3050
-	-1   0    0    1   
-$EndComp
 $Comp
 L Pad_Conn P2
 U 1 1 577ED942
@@ -196,7 +163,7 @@ U 1 1 577ED9DE
 P 8450 3050
 F 0 "P5" H 8450 3150 50  0000 C CNN
 F 1 "Pad_Conn" H 8550 2950 50  0000 C CNN
-F 2 "sparkparts:1PAD_8x7mm" H 8450 3050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8450 3050 50  0001 C CNN
 F 3 "" H 8450 3050 50  0000 C CNN
 	1    8450 3050
 	1    0    0    -1  
@@ -263,9 +230,7 @@ SW_GND
 Text HLabel 4200 4075 0    60   Input ~ 0
 SW_NC
 Wire Wire Line
-	4100 2900 4100 3050
-Wire Wire Line
-	3900 3050 6000 3050
+	8150 3050 8150 2900
 Wire Wire Line
 	4250 3750 5700 3750
 Wire Wire Line
@@ -320,17 +285,9 @@ Wire Wire Line
 	7400 3900 7400 4650
 Connection ~ 5600 3750
 Connection ~ 6000 3350
-Wire Wire Line
-	6800 3050 8250 3050
-Connection ~ 4100 3050
 Connection ~ 4100 4450
 Wire Wire Line
-	7400 3050 7400 3250
-Wire Wire Line
-	7400 3250 4650 3250
-Wire Wire Line
-	4650 3250 4650 3300
-Connection ~ 7400 3050
+	4650 3050 4650 3300
 Wire Wire Line
 	3900 4450 7400 4450
 Wire Wire Line
@@ -366,4 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 4650 8200 4650
 Connection ~ 7400 4450
+Wire Wire Line
+	4650 3050 8250 3050
+Connection ~ 8150 3050
 $EndSCHEMATC
